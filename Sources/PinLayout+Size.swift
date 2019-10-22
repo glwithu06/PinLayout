@@ -23,7 +23,7 @@ import UIKit
 import AppKit
 #endif
 
-enum AdjustSizeType {
+public enum AdjustSizeType {
     case fitTypeWidth
     case fitTypeHeight
     case fitTypeWidthFlexible

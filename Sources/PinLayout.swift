@@ -28,43 +28,43 @@ import Foundation
 #endif
 
 public class PinLayout<View: Layoutable> {
-    internal let view: View
-    internal let keepTransform: Bool
+    public let view: View
+    public let keepTransform: Bool
 
-    internal var _top: CGFloat?       // offset from superview's top edge
-    internal var _left: CGFloat?      // offset from superview's left edge
-    internal var _bottom: CGFloat?    // offset from superview's top edge
-    internal var _right: CGFloat?     // offset from superview's left edge
+    public var _top: CGFloat?       // offset from superview's top edge
+    public var _left: CGFloat?      // offset from superview's left edge
+    public var _bottom: CGFloat?    // offset from superview's top edge
+    public var _right: CGFloat?     // offset from superview's left edge
     
-    internal var _hCenter: CGFloat?
-    internal var _vCenter: CGFloat?
+    public var _hCenter: CGFloat?
+    public var _vCenter: CGFloat?
     
-    internal var width: CGFloat?
-    internal var minWidth: CGFloat?
-    internal var maxWidth: CGFloat?
-    internal var height: CGFloat?
-    internal var minHeight: CGFloat?
-    internal var maxHeight: CGFloat?
+    public var width: CGFloat?
+    public var minWidth: CGFloat?
+    public var maxWidth: CGFloat?
+    public var height: CGFloat?
+    public var minHeight: CGFloat?
+    public var maxHeight: CGFloat?
 
-    internal var adjustSizeType: AdjustSizeType?
+    public var adjustSizeType: AdjustSizeType?
 
-    internal var shouldKeepViewDimension: Bool {
+    public var shouldKeepViewDimension: Bool {
         return adjustSizeType == nil
     }
     
-    internal var marginTop: CGFloat?
-    internal var marginLeft: CGFloat?
-    internal var marginBottom: CGFloat?
-    internal var marginRight: CGFloat?
-    internal var shouldPinEdges = false
+    public var marginTop: CGFloat?
+    public var marginLeft: CGFloat?
+    public var marginBottom: CGFloat?
+    public var marginRight: CGFloat?
+    public var shouldPinEdges = false
     
-    internal var justify: HorizontalAlign?
-    internal var align: VerticalAlign?
+    public var justify: HorizontalAlign?
+    public var align: VerticalAlign?
     
-    internal var _marginTop: CGFloat { return marginTop ?? 0 }
-    internal var _marginLeft: CGFloat { return marginLeft ?? 0 }
-    internal var _marginBottom: CGFloat { return marginBottom ?? 0 }
-    internal var _marginRight: CGFloat { return marginRight ?? 0 }
+    public var _marginTop: CGFloat { return marginTop ?? 0 }
+    public var _marginLeft: CGFloat { return marginLeft ?? 0 }
+    public var _marginBottom: CGFloat { return marginBottom ?? 0 }
+    public var _marginRight: CGFloat { return marginRight ?? 0 }
     
     internal var isLayouted = false
 
